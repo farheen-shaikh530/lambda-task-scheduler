@@ -1,17 +1,25 @@
-# ✅ TaskSchedulerLambda
+# Lambda Task Scheduler
 
-🚀 A smart task scheduling utility that uses **Java Lambda Expressions** and **Streams** to sort, group, and prioritize tasks.
+The Lambda Task Scheduler is a lightweight JavaScript utility that demonstrates how to schedule and execute tasks using functional programming principles, particularly JavaScript's `setTimeout`, `setInterval`, and lambda (arrow function) syntax.
 
-> 🎯 This is my second open-source contribution using Lambdas in Java — focusing on **real-world time-based logic + functional programming**!
+This is Farheen’s first open source contribution using Lambda expressions and time-based logic.
 
----
+## Features
 
-## 🔧 Features
+- Schedule one-time or recurring tasks
+- Use lambda expressions to define clean and concise task logic
+- Simple, readable architecture with functional patterns
+- Time-based execution using JavaScript timers
 
-- Sort tasks by **priority and deadline**
-- Detect and list **overdue tasks**
-- Group tasks by **category**
-- Show **top 3 urgent tasks**
-- Fully written in **Java 8+**, using lambdas and stream API
+## Usage
 
----
+```js
+// Schedule a one-time task
+scheduleTask(() => {
+  console.log("One-time task executed.");
+}, 3000);
+
+// Schedule a recurring task
+scheduleRecurringTask(() => {
+  console.log("Recurring task running every 5 seconds.");
+}, 5000);
